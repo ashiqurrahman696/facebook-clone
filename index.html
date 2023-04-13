@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-20 grid grid-cols-12 px-2 bg-white border-b dark:bg-black xl:grid-cols-4 dark:border-neutral-600">
+        <div id="search" class="absolute top-0 left-0 z-10 p-3 bg-white border rounded-br-lg dark:bg-black dark:text-white dark:border-neutral-600">
+            <div id="search-input">
+                <i class="p-2 transition duration-150 rounded-full cursor-pointer fal fa-arrow-left hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                <input class="bg-neutral-100 p-2 w-[300px] ml-2 rounded-full dark:bg-neutral-700 focus:outline-none"
+                    type="text" name="" id="" placeholder="Search Facebook">
+            </div>
+            <div class="search-results">
+                <div class="flex items-center justify-between py-2">
+                    <h5 class="text-lg font-semibold">Recent</h5>
+                    <a href="#" class="p-2 text-blue-600 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">Edit</a>
+                </div>
+                <a href="#" class="flex items-center justify-between">
+                    <div class="flex items-center w-full p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <img class="w-10 h-10 mr-2 border rounded-full" src="img/search_img.jpg" alt="">
+                        <span class="font-semibold">WsCube Tech</span>
+                    </div>
+                    <i class="px-3 py-2 transition duration-150 rounded-full cursor-pointer far fa-times hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between">
+                    <div class="flex items-center w-full p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <img class="w-10 h-10 mr-2 border rounded-full" src="img/search_img.jpg" alt="">
+                        <span class="font-semibold">WsCube Tech</span>
+                    </div>
+                    <i class="px-3 py-2 transition duration-150 rounded-full cursor-pointer far fa-times hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between">
+                    <div class="flex items-center w-full p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <img class="w-10 h-10 mr-2 border rounded-full" src="img/search_img.jpg" alt="">
+                        <span class="font-semibold">WsCube Tech</span>
+                    </div>
+                    <i class="px-3 py-2 transition duration-150 rounded-full cursor-pointer far fa-times hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between">
+                    <div class="flex items-center w-full p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <img class="w-10 h-10 mr-2 border rounded-full" src="img/search_img.jpg" alt="">
+                        <span class="font-semibold">WsCube Tech</span>
+                    </div>
+                    <i class="px-3 py-2 transition duration-150 rounded-full cursor-pointer far fa-times hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between">
+                    <div class="flex items-center w-full p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <img class="w-10 h-10 mr-2 border rounded-full" src="img/search_img.jpg" alt="">
+                        <span class="font-semibold">WsCube Tech</span>
+                    </div>
+                    <i class="px-3 py-2 transition duration-150 rounded-full cursor-pointer far fa-times hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between">
+                    <div class="flex items-center w-full p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <img class="w-10 h-10 mr-2 border rounded-full" src="img/search_img.jpg" alt="">
+                        <span class="font-semibold">WsCube Tech</span>
+                    </div>
+                    <i class="px-3 py-2 transition duration-150 rounded-full cursor-pointer far fa-times hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </a>
+                <a href="#" class="flex items-center justify-between">
+                    <div class="flex items-center w-full p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <img class="w-10 h-10 mr-2 border rounded-full" src="img/search_img.jpg" alt="">
+                        <span class="font-semibold">WsCube Tech</span>
+                    </div>
+                    <i class="px-3 py-2 transition duration-150 rounded-full cursor-pointer far fa-times hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </a>
+            </div>
+        </div>
+        <div id="h-left" class="relative flex items-center col-span-6 py-2 md:col-span-2 md:py-0 xl:col-span-1">
+            <a href="index.html">
+                <img class="w-10 mr-2" src="img/Facebook_Logo.png" alt="FB Logo">
+            </a>
+            <form class="bg-neutral-100 rounded-full py-1.5 px-5 text-lg focus:outline-none dark:bg-neutral-700" method="POST">
+                <i class="mr-1 fal fa-search text-neutral-400"></i>
+                <input class="hidden bg-transparent xl:inline-block focus:outline-none" type="text" name="" id="" placeholder="Search Facebook">
+            </form>
+        </div>
+        <div class="hidden col-span-8 text-center md:block xl:col-span-2">
+            <a href="#" title="Home"
+                class="active text-xl py-4 px-10 mt-1 inline-block border-b-[3px] border-blue-600 text-blue-600"
+                id="house">
+                <i class="fa fa-house"></i>
+            </a>
+            <a href="#" title="Friends" class="inline-block px-10 py-4 mt-1 text-xl transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700" id="friends">
+                <i class="far fa-user-friends"></i>
+            </a>
+            <a href="#" title="Watch" class="inline-block px-10 py-4 mt-1 text-xl transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700" id="watch">
+                <i class="far fa-video"></i>
+            </a>
+            <a href="#" title="Marketplace" class="inline-block px-10 py-4 mt-1 text-xl transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700" id="marketplace">
+                <i class="far fa-store"></i>
+            </a>
+            <a href="#" title="Groups"
+                class="hidden px-10 py-4 mt-1 text-xl transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700 lg:inline-block"
+                id="group">
+                <i class="far fa-users"></i>
+            </a>
+        </div>
+        <div class="relative flex items-center justify-end col-span-6 py-2 md:col-span-2 md:py-0 xl:col-span-1">
+            <i class="px-2 py-1 mr-2 text-lg rounded-full cursor-pointer fa fa-th bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"></i>
+            <i class="px-2 py-1 mr-2 text-lg rounded-full cursor-pointer fab fa-facebook-messenger bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"></i>
+            <i class="px-2 py-1 mr-2 text-lg rounded-full cursor-pointer fa fa-bell bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"></i>
+            <img class="w-10 rounded-full cursor-pointer" src="img/profile.jpg" alt="">
+        </div>
+    </header>
+    <main class="grid grid-cols-12 gap-4 p-3">
+        <div class="hidden col-span-5 lg:col-span-3 lg:block">
+            <ul>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <img class="object-cover object-center w-8 h-8 mr-2 rounded-full cursor-pointer"
+                            src="img/profile.jpg" alt="">
+                        <span class="font-semibold">Ashiqur Rahman Pranto</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-user-friends"></i>
+                        <span class="font-semibold">Friends</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-users"></i>
+                        <span class="font-semibold">Groups</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-history"></i>
+                        <span class="font-semibold">Memories</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-newspaper"></i>
+                        <span class="font-semibold">Most Recent</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-store"></i>
+                        <span class="font-semibold">Marketplace</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-bullhorn"></i>
+                        <span class="font-semibold">Ads Manager</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-tint"></i>
+                        <span class="font-semibold">Blood Donations</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl far fa-calendar-star"></i>
+                        <span class="font-semibold">Events</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-star"></i>
+                        <span>Favorites</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-heart-circle"></i>
+                        <span>Fundraisers</span>
+                    </a>
+                </li>
+                <li class="p-2 transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <a href="#" class="flex items-center">
+                        <i class="mr-3 text-xl fa fa-gamepad"></i>
+                        <span>Play Games</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-span-12 md:col-span-7 lg:col-span-6">
+            <div class="grid grid-cols-3 mb-2 border-b dark:border-neutral-600">
+                <div class="text-center py-4 cursor-pointer font-medium active border-b-[3px] border-blue-600 text-blue-600">
+                    <i class="fa fa-book-open"></i>
+                    <span>Stories</span>
+                </div>
+                <div class="py-4 font-medium text-center transition duration-300 rounded-md cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <i class="fa fa-film"></i>
+                    <span>Reels</span>
+                </div>
+                <div class="py-4 font-medium text-center transition duration-300 rounded-md cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <i class="fa fa-video-plus"></i>
+                    <span>Rooms</span>
+                </div>
+            </div>
+            <div class="mb-3 owl-carousel owl-theme" id="stories">
+                <div class="item">
+                    <div class="relative w-full h-56 overflow-hidden border cursor-pointer rounded-xl dark:border-neutral-600">
+                        <div class="bg-black">
+                            <img class="h-[9.75rem] object-cover object-center transition duration-300 hover:scale-105 hover:opacity-95"
+                                src="img/profile.jpg" alt="">
+                        </div>
+                        <i class="fa fa-plus absolute bg-blue-600 text-white p-2 rounded-full border-white border-4 top-[135px] left-1/2 -translate-x-1/2 dark:border-black"></i>
+                        <span class="block pt-6 pb-2 font-semibold text-center">Create Story</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="relative w-full h-56 overflow-hidden border cursor-pointer rounded-xl dark:border-neutral-600">
+                        <div
+                            class="object-cover object-center transition duration-300 bg-black hover:scale-105 hover:opacity-95">
+                            <img src="img/story_img.jpg" alt="">
+                        </div>
+                        <div class="story-profile">
+                            <img class="absolute top-2 left-2 !w-10 h-10 rounded-full border-4 border-blue-600" src="img/story_profile.jpg" alt="">
+                        </div>
+                        <span class="block pt-6 pb-2 absolute w-full bottom-0 pl-2 text-start text-white z-10 font-semibold bg-gradient-to-b from-transparent to-[#0004]">Monir Hossen</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="relative w-full h-56 overflow-hidden border cursor-pointer rounded-xl dark:border-neutral-600">
+                        <div class="bg-black">
+                            <img class="object-cover object-center h-56 transition duration-300 hover:scale-105 hover:opacity-95" src="img/story_img2.jpg" alt="">
+                        </div>
+                        <div class="story-profile">
+                            <img class="absolute top-2 left-2 !w-10 h-10 rounded-full border-4 border-blue-600" src="img/story_profile2.jpg" alt="">
+                        </div>
+                        <span class="block pt-6 pb-2 absolute w-full bottom-0 pl-2 text-start text-white z-10 font-semibold bg-gradient-to-b from-transparent to-[#0004]">NewsBangla24.com</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="relative w-full h-56 overflow-hidden border cursor-pointer rounded-xl dark:border-neutral-600">
+                        <div class="bg-black">
+                            <img class="object-cover object-center h-56 transition duration-300 hover:scale-105 hover:opacity-95" src="img/story_img3.jpg" alt="">
+                        </div>
+                        <div class="story-profile">
+                            <img class="absolute top-2 left-2 !w-10 h-10 rounded-full border-4 border-blue-600" src="img/story_profile3.jpg" alt="">
+                        </div>
+                        <span class="block pt-6 pb-2 absolute w-full bottom-0 pl-2 text-start text-white z-10 font-semibold bg-gradient-to-b from-transparent to-[#0004]">somoynews.tv</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 rounded-lg bg-neutral-100 dark:bg-neutral-700">
+                <div class="grid items-center grid-cols-12 gap-2 pb-4 border-b dark:border-neutral-600">
+                    <img class="col-span-1 rounded-full" src="img/profile.jpg" alt="">
+                    <form class="col-span-11">
+                        <input class="w-full p-2 pl-4 text-xl rounded-full focus:outline-none bg-neutral-200 dark:bg-neutral-600"
+                        type="text" name="" placeholder="What's on your mind?">
+                    </form>
+                </div>
+                <div class="flex pt-3 justify-evenly">
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="fa fa-video"></i> Live Video
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="fa fa-images"></i> Photo/Video
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="far fa-laugh"></i> Feeling/Activity
+                    </button>
+                </div>
+            </div>
+            <div class="my-4 overflow-hidden border rounded-md dark:border-neutral-600">
+                <div class="relative flex p-4">
+                    <div class="relative mr-2">
+                        <a href="#">
+                            <img class="object-cover object-center w-10 h-10 rounded-full" src="img/post_profile.png" alt="Post Profile">
+                        </a>
+                    </div>
+                    <div class="post-title">
+                        <div class="title-head">
+                            <a class="font-bold hover:underline" href="#">SoftTech-IT Institute</a>
+                        </div>
+                        <div class="text-sm font-semibold text-neutral-400">
+                            <a class="hover:underline" href="#">30 March at 13:30</a>
+                            <span><sup>.</sup></span>
+                            <i class="fa fa-globe-americas"></i>
+                        </div>
+                    </div>
+                    <div class="absolute -translate-y-1/2 right-4 top-1/2">
+                        <i class="p-2 transition duration-150 rounded-full cursor-pointer fa fa-ellipsis-h hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="p-2">
+                        <p>শতকরা ১% এর পক্ষেই এর সঠিক উত্তর দেয়া সম্ভব! 😎</p>
+                        <p>সময় মাত্র ১ মিনিট:</p>
+                    </div>
+                    <img class="w-full" src="img/post_photo.png" alt="">
+                    <div class="flex items-center justify-between p-2 border-b dark:border-neutral-600">
+                        <div class="flex items-center gap-1">
+                            <img class="inline w-6" src="img/like.webp" alt=""> <span>42</span>
+                        </div>
+                        <div class="comment-count">
+                            <span>188</span> <i class="far fa-comment"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-2 pt-3 pb-2 justify-evenly">
+                    <button class="w-full p-2 text-lg text-blue-600 rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button" class="like">
+                        <i class="fa fa-thumbs-up"></i> Like
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="far fa-comment"></i> Comment
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="far fa-share"></i> Share
+                    </button>
+                </div>
+            </div>
+            <div class="my-4 overflow-hidden border rounded-md dark:border-neutral-600">
+                <div class="relative flex p-4">
+                    <div class="relative mr-2">
+                        <a href="#">
+                            <img class="object-cover object-center w-10 h-10 rounded-full" src="img/post_profile2.jpg" alt="Post Profile">
+                            <!-- <div class="absolute bottom-0 right-0">
+                                <img class="w-6 h-6 border-2 border-white rounded-full" src="img/post_profile2.jpg" alt="">
+                            </div> -->
+                        </a>
+                    </div>
+                    <div class="post-title">
+                        <div class="title-head">
+                            <a class="font-bold hover:underline" href="#">UNICEF</a>
+                        </div>
+                        <div class="text-sm font-semibold text-neutral-400">
+                            <a class="hover:underline" href="#">Sponsored</a>
+                            <span><sup>.</sup></span>
+                            <i class="fa fa-globe-americas"></i>
+                        </div>
+                    </div>
+                    <div class="absolute -translate-y-1/2 right-4 top-1/2">
+                        <i class="p-2 transition duration-150 rounded-full cursor-pointer fa fa-ellipsis-h hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="p-2">
+                        <p>Your donation will help UNICEF fight malnutrition in children like eight-month-old Mahdi by providing life-saving therapeutic milk. This Ramadan, let us continue to strengthen our fight against malnutrition. Give now!</p>
+                    </div>
+                    <img class="w-full" src="img/post_photo2.jpg" alt="">
+                    <div class="flex items-center justify-between p-2 border-b dark:border-neutral-600">
+                        <div class="flex items-center gap-1">
+                            <img class="inline w-6" src="img/like.webp" alt=""> <span>179</span>
+                        </div>
+                        <div class="comment-count">
+                            <span>3</span> <i class="far fa-comment"></i>
+                            <span>2</span> <i class="far fa-share"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-2 pt-3 pb-2 justify-evenly">
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button" class="like">
+                        <i class="far fa-thumbs-up"></i> Like
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="far fa-comment"></i> Comment
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="far fa-share"></i> Share
+                    </button>
+                </div>
+            </div>
+            <div class="my-4 overflow-hidden border rounded-md dark:border-neutral-600">
+                <div class="relative flex p-4">
+                    <div class="relative mr-2">
+                        <a href="#">
+                            <img class="object-cover object-center w-10 h-10 rounded-full" src="img/post_profile3.jpg" alt="Post Profile">
+                        </a>
+                    </div>
+                    <div class="post-title">
+                        <div class="title-head">
+                            <a class="font-bold hover:underline" href="#">Bohubrihi</a>
+                        </div>
+                        <div class="text-sm font-semibold text-neutral-400">
+                            <a class="hover:underline" href="#">Sponsored</a>
+                            <span><sup>.</sup></span>
+                            <i class="fa fa-globe-americas"></i>
+                        </div>
+                    </div>
+                    <div class="absolute -translate-y-1/2 right-4 top-1/2">
+                        <i class="p-2 transition duration-150 rounded-full cursor-pointer fa fa-ellipsis-h hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <div class="p-2">
+                        <p>লোকাল বা রিমোট জবের জন্য এখন Python ও Javascript ওয়েব ডেভেলপমেন্টের প্রচুর চাহিদা রয়েছে। তাই, এই সেক্টরে সফল ক্যারিয়ার গড়ার লক্ষ্যে কীভাবে নিজেকে তৈরি করবেন, তার দিকনির্দেশনা দিতে বহুব্রীহির পক্ষ থেকে ফ্রি সেমিনারের আয়োজন করা হয়েছে। 😁</p>
+                        <p>প্রায় এক ঘন্টার এই সেমিনারে,  Python ও Javascript ওয়েব ডেভেলপার হিসেবে গড়ে উঠার উপায়গুলো আপনাদের সামনে তুলে ধরা হবে। এই সেক্টরে ক্যারিয়ারে আপনার ফিউচার পজিশন কী হবে তা নিয়ে আপনাদের সকল কনফিউশন দূর করা হবে। এছাড়াও, এই বিষয়ে আপনাদের সকল প্রশ্নের উত্তর দেয়া হবে।</p>
+                        <p>সেমিনারের জন্য ফ্রি রেজিস্ট্রেশন করতে 'Sign Up' বাটনে ক্লিক করে ফর্ম ফিলআপ করুন!🔥 সেমিনারের তারিখ ও সময় ইমেইল ও মোবাইল ম্যাসেজিং-এর মাধ্যমে জানিয়ে দেয়া হবে।</p>
+                    </div>
+                    <img class="w-full" src="img/post_photo3.jpg" alt="">
+                    <div class="flex items-center justify-between p-2 border-b dark:border-neutral-600">
+                        <div class="flex items-center gap-1">
+                            <img class="inline w-6" src="img/like.webp" alt=""> <span>493</span>
+                        </div>
+                        <div class="comment-count">
+                            <span>64</span> <i class="far fa-comment"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-2 pt-3 pb-2 justify-evenly">
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button" class="like">
+                        <i class="far fa-thumbs-up"></i> Like
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="far fa-comment"></i> Comment
+                    </button>
+                    <button class="w-full p-2 text-lg rounded-lg cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-600" type="button">
+                        <i class="far fa-share"></i> Share
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden col-span-5 lg:col-span-3 md:block">
+            <div class="profile-and-page">
+                <div class="flex items-center justify-between">
+                    <h5 class="text-lg font-semibold">Your Pages and profiles</h5>
+                    <i class="p-2 transition duration-150 rounded-full cursor-pointer fa fa-ellipsis-h hover:bg-neutral-100 dark:hover:bg-neutral-700"></i>
+                </div>
+                <ul>
+                    <li class="p-2 px-3 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <img class="object-cover object-center w-8 h-8 mr-2 rounded-full cursor-pointer" src="img/profile.jpg" alt="">
+                            <span>Ashiqur Rahman Pranto</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <i class="mr-3 text-xl far fa-bell"></i>
+                            <span>1 Notification</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <i class="mr-3 text-xl far fa-bullhorn"></i>
+                            <span>Create Promotion</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <h5 class="text-lg font-semibold">Friend Requests</h5>
+                    <a href="#" class="p-2 text-blue-600 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">See All</a>
+                </div>
+                <div class="grid grid-cols-5 gap-2 p-3 my-2 rounded-lg cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                    <div class="col-span-1">
+                        <img class="mr-2 rounded-full" src="img/req_profile.jpg" alt="">
+                    </div>
+                    <div class="col-span-4">
+                        <div class="req-name">
+                            <h5 class="text-base font-semibold">Abu Hanif Srabon</h5>
+                        </div>
+                        <div class="mutuals">
+                            <p class="text-sm">3 mutual friends</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-1">
+                            <button type="button" class="col-span-1 py-1 font-semibold text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700 dark:hover:bg-blue-500">Confirm</button>
+                            <button type="button" class="col-span-1 py-1 font-semibold transition duration-300 rounded-md bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="py-2">
+                <div class="flex items-center justify-between">
+                    <h5 class="text-lg font-semibold">Contacts</h5>
+                    <div class="contact-options">
+                        <i class="p-2 px-3 mr-3 text-xl transition duration-150 rounded-full cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700 fa fa-video-plus"></i>
+                        <i class="p-2 px-3 mr-3 text-xl transition duration-150 rounded-full cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700 fa fa-search"></i>
+                        <i class="p-2 px-3 mr-3 text-xl transition duration-150 rounded-full cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-700 fa fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <ul>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Bilkis Bely</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile2.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Md Abusayed Topoder</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile3.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Tahmina Khatun</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile4.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Ali Hasan</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile5.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Md Ismail Hossain</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile6.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Lipu Taher</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile7.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Bristi Amin</span>
+                        </a>
+                    </li>
+                    <li class="p-2 font-semibold transition duration-300 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-700">
+                        <a href="#" class="flex items-center">
+                            <div class="relative">
+                                <img class="object-cover object-center w-8 h-8 mr-2 rounded-full" src="img/contact_profile8.jpg" alt="">
+                                <div class="absolute bottom-0 w-2 h-2 rounded-full right-2 bg-lime-500"></div>
+                            </div>
+                            <span>Mukul Muhammad</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
